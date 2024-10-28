@@ -20,10 +20,10 @@ class App extends Component {
       subject:{title :'React',desc:'Single page Application'},
       welcome:{title :'Welcome',desc:'Welcome to React'},
       menus:[
-        {id:1, title:'HTML', desc:'Hypertext Markup Language'},
-        {id:2, title:'CSS', desc:'CSS for design'},
-        {id:3, title:'Javascript', desc:'Javascript for interaction'},
-        {id:4, title:'Reat', desc:'Single Page Application'}
+        {id:1, title:'HTML', desc:'Hypertext Markup Language', difficulty:1},
+        {id:2, title:'CSS', desc:'CSS for design', difficulty:2},
+        {id:3, title:'Javascript', desc:'Javascript for interaction', difficulty:3}
+
       ]
     };
   }
