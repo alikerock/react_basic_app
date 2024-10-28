@@ -73,11 +73,16 @@ class App extends Component {
 
       let _data = this.getReadArticle();     
 
-      _article = <UpdateArticle data={_data} onsubmit={(_title, _desc)=>{
+      _article = <UpdateArticle data={_data} onsubmit={(_title, _desc, _difficulty)=>{
         
         let _menus = [...this.state.menus];
         const idx = this.state.menus.findIndex(item=> item.id === this.state.selected_id);
-        _menus[idx] = {id:this.state.selected_id, title:_title, desc:_desc} //값 수정
+        _menus[idx] = {
+          id:this.state.selected_id, 
+          title:_title, 
+          desc:_desc,
+          difficulty: _difficulty
+        } //값 수정
         this.setState({
           menus:_menus,
           mode:'read'
